@@ -1,0 +1,75 @@
+<div class="container">
+<form [formGroup]="simpleInterestForm" (ngSubmit)="submit()" #myForm>
+  <div class="form-group">
+    <h2>Mortgage Calculator</h2>
+    <label for="principal">Principal</label>
+    <input
+      type="text"
+      class="form-control"
+      name="principal"
+      formControlName="principal"
+      [ngClass]="
+        f.principal.invalid && (f.principal.dirty || f.principal.touched)
+          ? 'is-invalid'
+          : ''
+      "
+    />
+    @if(f.principal.invalid && (f.principal.dirty || f.principal.touched)){
+    <small class="alert alert-danger"
+      >Principal is mandatory and cannot be below 100.</small
+    >
+    }
+  </div>
+  <div class="form-group">
+    <label for="rate">Rate</label>
+    <input
+      type="text"
+      class="form-control"
+      name="rate"
+      formControlName="rate"
+      [ngClass]="
+        f.rate.invalid && (f.rate.dirty || f.rate.touched) ? 'is-invalid' : ''
+      "
+    />
+    @if (f.rate.invalid && (f.rate.dirty || f.rate.touched)) {
+    <small class="alert alert-danger"
+      >Rate is mandatory and cannot be below 1.</small
+    >
+    }
+  </div>
+  <div class="form-group">
+    <label for="time">Time in months</label>
+    <input
+      type="text"
+      class="form-control"
+      name="time"
+      formControlName="time"
+      [ngClass]="
+        f.time.invalid && (f.time.dirty || f.time.touched) ? 'is-invalid' : ''
+      "
+    />
+    @if (f.time.invalid && (f.time.dirty || f.time.touched)) {
+
+    <small class="alert alert-danger"
+      >Time is mandatory and cannot be below 1.</small
+    >
+    }
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    [disabled]="!simpleInterestForm.valid"
+  >
+    Calculate
+  </button>
+</form>
+<section class="section-card">
+  <div class="results">
+    <h3>Your results</h3>
+    <!-- <p>Your results are show below </p> -->
+    <label for="results" >Results</label>
+    <input type="text" class="form-control" name="results"/>
+  </div>
+</section>
+</div>
+ 

@@ -1,0 +1,112 @@
+/* General Styling for Home Section */
+#home {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  #home .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+  }
+  
+  #home p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  #home .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #home .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  #home .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+  }
+  #home .btn-three{
+    background-color: #084070;
+    color: white;
+    border: none;
+  }
+  
+  #home .btn-primary:hover,
+  #home .btn-secondary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  #home .profile-photo {
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+/*   
+  #home .social-links {
+    margin-top: 20px;
+  }
+  
+  #home .social-links a {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+  } */
+  /* #home .social-links a:hover {
+    color: #007bff; /* Link color change on hover */
+  /* Styling for the entire social media section */
+.social-media-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-media-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Styling for the social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between icons */
+}
+
+.social-link {
+  font-size: 2.5rem; /* Size of the social media icons */
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.social-link:hover {
+  color: #007bff; /* Change color on hover for LinkedIn */
+}
+
+/* GitHub icon hover effect */
+.social-link:nth-child(2):hover {
+  color: rgb(34, 172, 252); /* GitHub icon stays black but becomes more prominent on hover */
+}
+
+/* Additional hover colors can be added for other social media platforms */
+
+  

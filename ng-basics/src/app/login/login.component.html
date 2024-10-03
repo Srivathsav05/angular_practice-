@@ -1,0 +1,51 @@
+
+<div class="container-form">
+<form>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      [(ngModel)]="formObj.email"
+    />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      placeholder="Password"
+      aria-describedby="passwordHelp"
+      [(ngModel)]="formObj.password"
+    />
+    <small id="passwordHelp" class="form-text text-muted"
+      >Password must be at least 8 characters long.</small
+    >
+  </div>
+  <div class="form-group">
+    <div class="terms">
+      <input
+        type="checkbox"
+        name="agree"
+        id="agree"
+        (change)="changeLoginStatus($event)"
+      />
+      <label for="agree">I agree to the terms and conditions</label>
+    </div>
+    <button type="button" [disabled]="formObj.isLoginDisabled">Login</button>
+  </div>
+
+  <h2>
+    Your email is {{ formObj.email }} and your password is
+    {{ formObj.password }}
+  </h2>
+ </form>
+</div>

@@ -1,0 +1,13 @@
+<form>
+    <div class="form-group">
+      <input
+        type="text"
+        aclass="form-control"
+        id="reminder"
+        placeholder="What do you need to be reminded about?"
+        [(ngModel)] = "reminderText"
+        name="='reminderText"
+        (keyup) = "addReminder($event)"
+        />
+    </div>
+</form>

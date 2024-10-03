@@ -1,0 +1,33 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap'); */
+.nav{
+    width: 100%;
+    background-color: rgb(22, 73, 182);
+    color: whitesmoke;
+    padding: 16px 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.nav-link{
+    padding: 2px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    text-decoration: none;
+    color: white;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}

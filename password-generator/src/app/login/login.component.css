@@ -1,0 +1,45 @@
+.password-generator-container {
+    background-color: #1e1e2e;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    color: #e0e0e0;
+    margin: auto;
+    text-align: center;
+  }
+ 
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2a2a3d;
+    color: white;
+    margin-bottom: 20px;
+  }
+ 
+  input[type="range"] {
+    width: 100%;
+  }
+ 
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+ 
+  button {
+    background-color: #27ae60;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+  button:hover {
+    background-color: #2ecc71;
+  }
+ 
+  .strength {
+    margin-top: 20px;
+  }

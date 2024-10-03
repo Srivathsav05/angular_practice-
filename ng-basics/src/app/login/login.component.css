@@ -1,0 +1,64 @@
+.container-form{
+    justify-content: center;
+    display: flex;
+
+}
+form{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    font-family: sans-serif;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+small{
+    color: grey;
+    font-size: 12px;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+.term{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
